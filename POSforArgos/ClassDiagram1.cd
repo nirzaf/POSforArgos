@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="POSforArgos.Business.CashierManagement" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="AddCashier" Hidden="true" />
+      <Method Name="DeleteCashier" Hidden="true" />
+      <Method Name="GetCashier" Hidden="true" />
+      <Method Name="SearchCashier" Hidden="true" />
+      <Method Name="UpdateCashier" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAEEAAAIgAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Business\CashierManagement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.Business.CategoryManagement" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAIAAAAAAAAAAAAAAAgAAAAAAACAAAAAg=</HashCode>
+      <FileName>Business\CategoryManagement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.Business.GRNBusinessLayer" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAQAAAAAAAAAEIAAACAAAAAQAAAAAAIE=</HashCode>
+      <FileName>Business\GRNBusinessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.Business.LoginAuth" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAIAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Business\LoginAuth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.Business.ManageCustomerBL" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAQAAAAAABAAAAAAAACAAAAAAAAEAAAAJAAA=</HashCode>
+      <FileName>Business\ManageCustomerBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.Business.ManageItems" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAQAAAAEAAIEAAAQAAAAAAAAIAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\ManageItems.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.Business.SalesBLL" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAQg=</HashCode>
+      <FileName>Business\SalesBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.DLL.CategoryManagementData" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAgAAAAgAAAAAQACAAAAAg=</HashCode>
+      <FileName>DLL\CategoryManagementData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.DLL.CustomerData" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAQAAAAAABAAAAAAgACAAAAAAAAUAAAABAAA=</HashCode>
+      <FileName>DLL\CustomerData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.DLL.DataCon" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DLL\DataCon..cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.DLL.GRNDataLayer" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAgAAAAAAAAkAAAAAAAAAAQACAABAIA=</HashCode>
+      <FileName>DLL\GRNDataLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.DLL.LoginDataAccess" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DLL\LoginDataAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.DLL.ManageCashierData" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAEAAAAgAAAAAAAAAgAAAAAAAACAQAAAAAAAg=</HashCode>
+      <FileName>DLL\ManageCashierData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.DLL.ManageItemData" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAQAAAAAAAAAAAAQAAAAAggAIAAgAAAAQAAAAAAAA=</HashCode>
+      <FileName>DLL\ManageItemData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.DLL.SalesData" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQgAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DLL\SalesData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.Program">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.AdminPanel">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCAAAABAwCAAABAAAACAgAQCAEA4CIIAgCAAACAAAAA=</HashCode>
+      <FileName>View\AdminPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.CashierPanel" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAIABCAAABACAASAEAACAAAAAAAAAIAAACAAAAA=</HashCode>
+      <FileName>View\CashierPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.loginForm" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgAgAABACAAIBAAAACAgAAGAAIASAAAAJAACABAAAA=</HashCode>
+      <FileName>View\login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.ManageCustomerView" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAJAAgBCAyABIQyCCAAIACCIAEgAJpAABsSAAABQ4=</HashCode>
+      <FileName>View\ManageCustomerView .cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.Properties.Resources" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAACAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAFAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.View.CutomerData" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAwAAAAJABAAAQAAAIAgCQBkAAAAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.View.ManageCashiers" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAgAABCAQKBEQAECAAIAKAIAAoARgABAAAAACAQY=</HashCode>
+      <FileName>View\ManageCashiers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.View.ManageCategory" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQADACABCAAIAERAACAAoACAKIAoABAAAAAQAAQBQY=</HashCode>
+      <FileName>View\ManageCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.View.ManageItemView" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAABCAQKBAQAVCAQCAiAIIAoAQhAAAAAAgaAQY=</HashCode>
+      <FileName>View\ManageItemView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.View.ManageSales" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAABAAAASAQABUCARCAAAUigAAEQRAUIBAYgAIAAAA=</HashCode>
+      <FileName>View\ManageSales.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.View.myPosDbDataSet" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAZABAAAQAAAACgCQBgAAAAAAAEABDA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.View.ProductQty" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="POSforArgos.View.ProductQty.ItemQty" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>View\ProductQty.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>DAAAAACCqiAAAAFw0ACAAEACAAQAJAAAAgAJAAgQAoI=</HashCode>
+      <FileName>View\ProductQty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.View.ReceiveGoods" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiBgQAAAECwQBRAAIACAAIACAYgAABBBkABAAEQQBEg=</HashCode>
+      <FileName>View\ReceiveGoods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.View.CutomerDataTableAdapters.CustomerTableAdapter">
+    <Position X="2.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.View.CutomerDataTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="POSforArgos.View.CutomerDataTableAdapters.TableAdapterManager.UpdateOrderOption" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Class Name="POSforArgos.View.CutomerDataTableAdapters.TableAdapterManager.SelfReferenceComparer" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAABABAEBAAAAMAAgAAACgACAAAQAAAAADAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.View.myPosDbDataSetTableAdapters.Item_StockTableAdapter" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSforArgos.View.myPosDbDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAQACAAAABABAEBAAAAMAAgAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

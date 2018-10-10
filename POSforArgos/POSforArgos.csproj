@@ -8,9 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>POSforArgos</RootNamespace>
     <AssemblyName>POSforArgos</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,7 +33,39 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,14 +78,158 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Business\CashierManagement.cs" />
+    <Compile Include="Business\CategoryManagement.cs" />
+    <Compile Include="Business\GRNBusinessLayer.cs" />
+    <Compile Include="Business\LoginAuth.cs" />
+    <Compile Include="Business\ManageCustomerBL.cs" />
+    <Compile Include="Business\ManageItems.cs" />
+    <Compile Include="Business\ReceiptPrint.cs" />
+    <Compile Include="Business\SalesBLL.cs" />
+    <Compile Include="DLL\SalesData.cs" />
+    <Compile Include="myPosDbDataLoyaltyCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myPosDbDataLoyaltyCustomer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myPosDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myPosDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myPosDbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myPosDbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="View\CustomerPurchaseHistory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\CustomerPurchaseHistory.Designer.cs">
+      <DependentUpon>CustomerPurchaseHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CutomerData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CutomerData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DLL\CategoryManagementData.cs" />
+    <Compile Include="DLL\CustomerData.cs" />
+    <Compile Include="DLL\DataCon..cs" />
+    <Compile Include="DLL\GRNDataLayer.cs" />
+    <Compile Include="DLL\LoginDataAccess.cs" />
+    <Compile Include="DLL\ManageCashierData.cs" />
+    <Compile Include="DLL\ManageItemData.cs" />
+    <Compile Include="View\IncomeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\IncomeReport.Designer.cs">
+      <DependentUpon>IncomeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoyaltyCustomerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoyaltyCustomerReport.Designer.cs">
+      <DependentUpon>LoyaltyCustomerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ManageCustomerView .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ManageCustomerView .Designer.cs">
+      <DependentUpon>ManageCustomerView .cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ManageSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ManageSales.Designer.cs">
+      <DependentUpon>ManageSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\myPosDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myPosDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CashierPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CashierPanel.Designer.cs">
+      <DependentUpon>CashierPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ManageCashiers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ManageCashiers.Designer.cs">
+      <DependentUpon>ManageCashiers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ManageCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ManageCategory.Designer.cs">
+      <DependentUpon>ManageCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ManageItemView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ManageItemView.Designer.cs">
+      <DependentUpon>ManageItemView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\ReceiveGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReceiveGoods.Designer.cs">
+      <DependentUpon>ReceiveGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TransactionSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TransactionSummary.Designer.cs">
+      <DependentUpon>TransactionSummary.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\CustomerPurchaseHistory.resx">
+      <DependentUpon>CustomerPurchaseHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\IncomeReport.resx">
+      <DependentUpon>IncomeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoyaltyCustomerReport.resx">
+      <DependentUpon>LoyaltyCustomerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ManageCustomerView .resx">
+      <DependentUpon>ManageCustomerView .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CashierPanel.resx">
+      <DependentUpon>CashierPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ManageCashiers.resx">
+      <DependentUpon>ManageCashiers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ManageCategory.resx">
+      <DependentUpon>ManageCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ManageItemView.resx">
+      <DependentUpon>ManageItemView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,7 +238,74 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\ManageSales.resx">
+      <DependentUpon>ManageSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReceiveGoods.resx">
+      <DependentUpon>ReceiveGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TransactionSummary.resx">
+      <DependentUpon>TransactionSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="myPosDbDataLoyaltyCustomer.xsc">
+      <DependentUpon>myPosDbDataLoyaltyCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="myPosDbDataLoyaltyCustomer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myPosDbDataLoyaltyCustomer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myPosDbDataLoyaltyCustomer.xss">
+      <DependentUpon>myPosDbDataLoyaltyCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="myPosDbDataSet.xsc">
+      <DependentUpon>myPosDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="myPosDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myPosDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myPosDbDataSet.xss">
+      <DependentUpon>myPosDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="myPosDbDataSet1.xsc">
+      <DependentUpon>myPosDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="myPosDbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myPosDbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myPosDbDataSet1.xss">
+      <DependentUpon>myPosDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="View\CutomerData.xsc">
+      <DependentUpon>CutomerData.xsd</DependentUpon>
+    </None>
+    <None Include="View\CutomerData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CutomerData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="View\CutomerData.xss">
+      <DependentUpon>CutomerData.xsd</DependentUpon>
+    </None>
+    <None Include="View\myPosDbDataSet.xsc">
+      <DependentUpon>myPosDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="View\myPosDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myPosDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="View\myPosDbDataSet.xss">
+      <DependentUpon>myPosDbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -73,7 +317,46 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel-icon.png" />
+    <None Include="Resources\img_102074.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Update.png" />
+    <None Include="Resources\View.png" />
+    <None Include="Resources\Add1.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\checkout.png" />
+    <None Include="Resources\Delete1.png" />
+    <None Include="Resources\Excel-icon1.png" />
+    <None Include="Resources\icon.jpg" />
+    <None Include="Resources\img_1020741.png" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\Update1.png" />
+    <None Include="Resources\View1.png" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\log out.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

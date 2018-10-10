@@ -1,0 +1,7 @@
+Note: 
+
+Admin password admin
+username       123
+
+Cashier username abc
+Cashier password 123
